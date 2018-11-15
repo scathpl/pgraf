@@ -100,6 +100,10 @@ int main() {
 					  det = det + (mat[0][i] * (mat[1][(i + 1) % 3] * mat[2][(i + 2) % 3] - mat[1][(i + 2) % 3] * mat[2][(i + 1) % 3]));
 
 				  cout << "\n\nWyznacznik: " << det;
+				  if (det == 0) {
+					  cout << endl << "Nie mozna odwrocic macierzy o wyznaczniku rownym 0";
+					  break;
+				  }
 
 				  cout << "\n\nMacierz odwrocona: \n";
 				  for (i = 0; i < 3; i++){
@@ -153,6 +157,11 @@ int main() {
 
 
 				  cout << "\n\nWyznacznik: " << det;
+
+				  if (det == 0) {
+					  cout << endl << "Nie mozna odwrocic macierzy o wyznaczniku rownym 0";
+					  break;
+				  }
 
 
 				  cout << "\n\nMacierz odwrocona: \n";
